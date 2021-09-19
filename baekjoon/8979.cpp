@@ -26,15 +26,15 @@ void get_ranking(int recur) {
     while(!pq.empty()){
         int next_medal = pq.top().first;
         vector<int> next_nation = pq.top().second;
-        //등수가 확실하게 갈리는 지점을 발견
+        // 등수가 확실하게 갈리는 지점을 발견
         if(this_medal != next_medal) {
-            //내가 원하는 나라를 발견하지 못한 상태라면 랭킹 계산 후 계속 찾기
+            // 내가 원하는 나라를 발견하지 못한 상태라면 랭킹 계산 후 계속 찾기
             if(!nation_flag) {
                 //랭킹 계산 후 pq2 clear
                 ranking += recur_pq.size();
                 recur_pq = PQ();
             }
-            //원하는 나라를 발견한 상태라면 다시 세부 등수확인을 위해 루프 탈출
+            // 원하는 나라를 발견한 상태라면 다시 세부 등수확인을 위해 루프 탈출
             else {
                 pq = recur_pq;
                 recur_pq = PQ();
@@ -42,7 +42,7 @@ void get_ranking(int recur) {
                 return;
             }
         }
-        //등수가 구분이 안되는 경우 현재 발견한 나라를 저장
+        // 등수가 구분이 안되는 경우 현재 발견한 나라를 저장
         if (next_nation.back() == K) nation_flag = true;
         recur_pq.push(pair<int,vector<int>>(next_nation[recur], next_nation));
         this_nation = next_nation;
