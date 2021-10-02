@@ -4,9 +4,10 @@
 #include <algorithm>
 
 using namespace std;
+
 class Solution {
 public:
-    int static lengthOfLongestSubstring(string s) {
+    int lengthOfLongestSubstring(string s) {
         int result = 0;
         int p = 0;
         queue<char> q;
@@ -29,8 +30,3 @@ public:
         return result;
     }
 };
-
-int main() {
-    int a = Solution::lengthOfLongestSubstring("pwwkew");
-    cout << a << endl;
-}
