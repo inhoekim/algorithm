@@ -35,7 +35,7 @@ public class Main {
 		}
 		
 		int middle = 6 - from - to;
-				
+		
 		recurse(block - 1, from, middle); 
 		recurse(1,from,to);
 		recurse(block-1,middle,to);
