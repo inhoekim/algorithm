@@ -60,7 +60,7 @@ vector<int> solution(vector<string> info, vector<string> query) {
         answer.push_back(result);
     }
 
-    return answer;
+    return answer ;
 }
 
 int main(){
