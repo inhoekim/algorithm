@@ -71,6 +71,6 @@ int main(){
     reverse(result.begin(), result.end());
     result.erase(remove(result.begin(),result.end(),'!'), result.end());
     cout << result + temp << endl;
-    return 0;
+    return 0 ;
 
 }
