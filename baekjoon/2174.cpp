@@ -98,7 +98,7 @@ int main(){
     }
     // 작업
     for(int i = 0; i < M; i++) {
-        if(flag) break;
+        if(flag) break ;
         func2[order_list[i].order](robot_list, order_list[i].robotIndex, order_list[i].iter);
     }
     if(!flag) cout << "OK" << endl;
