@@ -73,5 +73,5 @@ int main(){
     }
     int result = check_chain();
     cout << result << endl;
-    return 0;
+    return 0 ;
 }
