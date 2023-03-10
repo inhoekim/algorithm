@@ -66,5 +66,5 @@ int main(){
     }
     get_ranking(0);
     cout << ranking + 1 << "\n";
-    return 0;
+    return 0 ;
 }
