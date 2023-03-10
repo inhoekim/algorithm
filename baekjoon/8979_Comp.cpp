@@ -34,7 +34,7 @@ int main(){
     int ranking = 1;
     for(vector<int> l : list) {
         if (l[3] == K) break;
-        ranking++;
+        ranking++ ;
     }
     cout << ranking << endl;
 }
