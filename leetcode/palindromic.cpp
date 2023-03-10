@@ -70,5 +70,5 @@ int main(){
     Solution *s = new Solution();
     string result = s->longestPalindrome("abbba");
     cout << result << endl;
-    return 0;
+    return 0 ;
 }
