@@ -21,6 +21,6 @@ public:
                 else continue;  
             }
         }
-        return vector<int>{0}; // no answer
+        return vector<int>{0} ; // no answer
     }
 };
