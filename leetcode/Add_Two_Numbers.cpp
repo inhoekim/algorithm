@@ -33,6 +33,6 @@ public:
                 list = list->next;
             }
         }
-        return first;
+        return first ;
     }
 };
