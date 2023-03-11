@@ -142,6 +142,7 @@ class Sticker {
         ver %= 2;
         ArrayList<ArrayList<Integer>> after_arr = this.version.get(ver);
         ArrayList<ArrayList<Integer>> before_arr = this.version.get((ver + 1) % 2);
+        
         for (int y = 0; y < col; y++) {
             for (int x = 0; x < row; x++) {
                 int target = before_arr.get(this.row - 1 - x).get(y);
