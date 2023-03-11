@@ -3,14 +3,14 @@ import java.util.*;
 import java.util.stream.*;
 
 public class Algorithm {
+    public final static int EMPTY = 0;
     public static int n, m, k;
     public static BufferedReader br;
     public static StringTokenizer st;
-    public final static int EMPTY = 0;
-
     public static ArrayList<ArrayList<Integer>> macbook_arr;
     public static ArrayList<Sticker> stickers;
     public static int ret;
+    
     public static void main(String[] args) throws IOException {
         br = new BufferedReader(new InputStreamReader(System.in));
         st = new StringTokenizer(br.readLine());
