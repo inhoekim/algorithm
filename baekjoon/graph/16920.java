@@ -2,8 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <queue>
-#define WALL #
-#define EMPTY .
+#define EMPTY '.'
 
 using namespace std;
 
@@ -36,8 +35,9 @@ void bfs(queue<coord> &que, vector<coord> &temp_castle) {
 			int next_y = curr.y + dirs[i][0];
 			int next_x = curr.x + dirs[i][1];
 			if (next_y < 0 || next_y == n || next_x < 0 || next_x == m
-				|| map[next_y][next_x] != '.')
+				|| map[next_y][next_x] != EMPTY)
 				continue ;
+			//빈터면 성을 짓는다
 			map[next_y][next_x] = curr.castle_idx + '0';
 			ret[curr.castle_idx]++;
 			temp_castle.push_back(coord(next_y, next_x, curr.castle_idx, 0));
