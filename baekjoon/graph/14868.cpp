@@ -107,7 +107,7 @@ int main(void) {
 				else
 					l2 = {i, j};
 			}
-			else if (map[i][j] == '.') {
+			if (map[i][j] != 'X') {
 				que.push({i, j});
 				bfs_visited[i][j] = true;
 			}
